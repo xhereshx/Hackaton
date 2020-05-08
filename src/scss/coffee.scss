@@ -3,6 +3,14 @@
 @import 'default/resets';
 @import 'pages/footer';
 
+
+main {
+    width: $page-width;
+    margin: 0 auto;
+    font-family: $font-family;
+
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -10,6 +18,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+
 
     @media screen and(min-width:$bp-medium) {
         flex-direction: row;
