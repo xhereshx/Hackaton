@@ -42,7 +42,7 @@ function createStructure(done) {
 // deletes all assets (HTML, fonts, images) in dist
 function cleanAssets(done) {
     return del(
-        ['dist/**/*.html', 'dist/fonts/**/*', 'dist/img/**/*', 'dist/css/**/*'],
+        ['dist/**/*.html', 'dist/fonts/**/*', 'dist/img/**/*'],
         { force: true }
     );
 }
@@ -139,4 +139,3 @@ exports.publish = gulp.series(cleanAssets, publishHtml, publishFonts, publishIma
 exports.build = gulp.series(cleanAssets, publishHtmlProduction, publishFonts, publishImages, compileScssProduction);
 exports.build_dev = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment);
 exports.watch = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment, serve, watchFiles);
-
