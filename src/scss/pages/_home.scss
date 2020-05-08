@@ -1,5 +1,3 @@
-@import 'default/variables';
-
 .main {
     width: 80%;
     font-family: $font-family;
@@ -17,14 +15,12 @@
         @media screen and (min-width: $bp-small) {
             width: 100%;
             white-space: initial;
-
         }
     }
 
     &__subtitle {
         line-height: 2.5rem;
         font-size: 2rem;
-
         font-weight: normal;
         text-transform: uppercase;
     }
@@ -47,10 +43,6 @@
         @media screen and (min-width: $bp-large) {
             height: 30rem;
         }
-
-
-
-
     }
 
     &__info {

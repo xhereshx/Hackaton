@@ -19,15 +19,10 @@
         @media screen and (min-width: $bp-large) {
             justify-content: center;
         }
-
     }
 
     &--blue-link {
         color: $font-color-link;
-
-        @media screen and (min-width: $bp-large) {
-            padding: 0 2rem;
-        }
 
         &:hover {
             color: $font-color-tertiary;
@@ -35,6 +30,10 @@
     }
 
     &__link {
+
+        @media screen and (min-width: $bp-large) {
+            padding: 0 2rem;
+        }
 
         &--active {
             color: $font-color-tertiary;
