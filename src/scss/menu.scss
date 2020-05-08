@@ -12,9 +12,6 @@ main {
 .container {
     display: no-flex;
 
-
-
-
     @media screen and(min-width:$bp-medium) {
         display: flex;
         justify-content: space-around;
@@ -22,9 +19,6 @@ main {
         flex-wrap: wrap;
         align-items: center;
     }
-
-
-
 
     &__text {
         display: flex;
@@ -52,7 +46,6 @@ main {
 
         }
     }
-
 }
 
 img {
