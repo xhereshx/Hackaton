@@ -10,12 +10,18 @@ main {
 }
 
 .container {
-    display: flex;
-    border: 2px solid red;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    display: no-flex;
+
+
+
+
+    @media screen and(min-width:$bp-medium) {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 
 
 
@@ -29,8 +35,22 @@ main {
     }
 
     &__item {
-        width: 35%;
+        width: 100%;
 
+        @media screen and(min-width:$bp-medium) {
+            width: 35%;
+        }
+    }
+
+    &__item2 {
+        width: 100%;
+        display: none;
+
+        @media screen and(min-width:$bp-medium) {
+            width: 35%;
+            display: block;
+
+        }
     }
 
 }
@@ -39,8 +59,4 @@ img {
     width: 100%;
     object-fit: cover;
     margin-bottom: -2rem;
-    /* width: 60%;
-    align-items: center; */
-
-
 }
