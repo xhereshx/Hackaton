@@ -1,0 +1,43 @@
+@import 'default/variables';
+@import 'pages/header';
+@import 'default/resets';
+@import 'pages/footer';
+
+main{ width: 80%;
+    margin: 0 auto;
+
+}
+.container{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+
+
+    &__text{
+    display: flex;
+    
+    justify-content: space-between;
+    
+
+    }
+
+    &__item{
+    width: 35%;
+   
+    }
+
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -2rem;
+    /* width: 60%;
+    align-items: center; */
+    
+
+}
