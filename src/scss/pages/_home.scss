@@ -32,10 +32,25 @@
     &__img {
         width: 100%;
         object-fit: cover;
+    }
 
-        &--bottom {
-            margin-bottom: -2rem;
+    &__map {
+        width: 100%;
+        height: 16rem;
+        margin-bottom: -2rem;
+        border: 0;
+
+        @media screen and (min-width: $bp-medium) {
+            height: 24rem;
         }
+
+        @media screen and (min-width: $bp-large) {
+            height: 30rem;
+        }
+
+
+
+
     }
 
     &__info {
