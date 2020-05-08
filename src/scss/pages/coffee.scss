@@ -1,0 +1,19 @@
+@import '../default/variables';
+@import 'pages/header';
+
+.container{
+    width: 100%;
+    display: flex;
+    border: 2px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__item{
+    width: 45%;
+    display: flex;
+    /* flex-direction: column; */
+    }
+    &__img{
+        width: 10%;
+    }
+} 
