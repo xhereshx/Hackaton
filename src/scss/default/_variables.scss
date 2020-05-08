@@ -1,5 +1,16 @@
+//font family
+$font-family: Arial,
+Helvetica,
+sans-serif;
+
+
+//Colors
 $bg-color-primary: #fff; //white background
 $bg-color-secondary: #373c42; //dark background
+$bg-color-tertiary: #f8f9fa; //very light grey background
 $font-color-primary: #2e2e2e; //black font
 $font-color-secondary:#a4a4a6; //gray font
-$font-color-link: #2e69c4;
+$font-color-link: #2e69c4; //link font
+
+//breakpoints
+$bp-medium: 650px;
