@@ -1,4 +1,4 @@
-# Coffee shop page - hackaton
+# Coffee shop page
 
 Project done on the first hackaton at Coding Bootcamp Praha
 
