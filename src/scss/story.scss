@@ -1,14 +1,10 @@
 @import 'default/variables';
 @import 'default/resets';
-
 @import 'pages/header';
 @import 'pages/footer';
 
-
-
 .story {
-
-    width: 80%;
+    width: $page-width;
     margin: 0 auto;
     font-family: $font-family;
 
@@ -44,7 +40,6 @@
     @media screen and (min-width: $bp-medium) {
         width: 40%;
     }
-
 
     &__img {
         border-radius: 50%;
