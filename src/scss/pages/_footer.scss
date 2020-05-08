@@ -1,0 +1,57 @@
+.footer {
+    font-family: $font-family;
+    height: 22rem;
+    background-color: $bg-color-secondary;
+    text-align: center;
+
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 0 4rem 0;
+
+        @media screen and (min-width: $bp-large) {
+            justify-content: center;
+        }
+
+    }
+
+    &--blue-link {
+        color: $font-color-link;
+
+        @media screen and (min-width: $bp-large) {
+            padding: 0 2rem;
+        }
+
+        &:hover {
+            color: $font-color-tertiary;
+        }
+    }
+
+    &__link {
+
+        &--active {
+            color: $font-color-tertiary;
+            text-decoration: none;
+        }
+    }
+
+    &__hashtag {
+        text-transform: uppercase;
+        color: $font-color-tertiary;
+        font-weight: bold;
+        font-size: 1.5rem;
+
+    }
+
+    &__social {
+        color: $font-color-tertiary;
+
+    }
+}

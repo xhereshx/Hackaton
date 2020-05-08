@@ -7,11 +7,26 @@
     margin: 0 auto;
 
     &__title {
+        line-height: 3.5rem;
+        font-size: 2.5rem;
         font-weight: normal;
         text-transform: uppercase;
+        width: 2rem;
+
+        white-space: pre-wrap;
+
+        @media screen and (min-width: $bp-medium) {
+            flex-direction: row;
+            width: 100%;
+            white-space: initial;
+
+        }
     }
 
     &__subtitle {
+        line-height: 2.5rem;
+        font-size: 2rem;
+
         font-weight: normal;
         text-transform: uppercase;
     }
@@ -53,7 +68,6 @@
     }
 
     &__text {
-        //padding: 0.25rem 0;
         margin: 0.5rem 0;
     }
 }
